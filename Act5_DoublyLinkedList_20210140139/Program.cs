@@ -214,11 +214,18 @@ namespace DoublyLinkedList
                                 }
                             }
                             break;
+                        case '6':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid option");
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
                 {
-                    
+                    Console.WriteLine("Check for the value entered.");
                 }
             }
         }

@@ -182,6 +182,11 @@ namespace DoublyLinkedList
                                     Console.WriteLine("Record with roll number " + rollNo + " deleted \n");
                             }
                             break;
+                        case '3':
+                            {
+                                obj.traverse();
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)

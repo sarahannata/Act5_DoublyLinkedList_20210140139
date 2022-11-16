@@ -2,5 +2,8 @@
 
 namespace DoublyLinkedList
 {
+    class Node
+    {
 
+    }
 }

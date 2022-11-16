@@ -55,6 +55,11 @@ namespace DoublyLinkedList
                     return;
                 }
             }
+            /*On the execution of the above for loop, prev and 
+             * current will point to thoso nodes beetween which the new node is to be inserted.*/
+            newnode.next = current;
+            newnode.prev = previous;
+
         }
     }
 }

@@ -67,7 +67,18 @@ namespace DoublyLinkedList
                 previous.next = newnode;
                 return;
             }
+            current.prev = newnode;
+            previous.next = newnode;
+        }
 
+        /*Check whether the specified nod is present*/
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            for (previous = current = START; current != null && rollNo != current.rollNumber; previous = current, current = current.next)
+            { }
+            /*The above for loop traverses the list. If the specied node
+             * is found then the function returns true, otherwise false.*/
+            return (current != null);
         }
     }
 }

@@ -60,6 +60,14 @@ namespace DoublyLinkedList
             newnode.next = current;
             newnode.prev = previous;
 
+            /* If the node is to be inserted at the end of the list.*/
+            if (current == null)
+            {
+                newnode.next = null;
+                previous.next = newnode;
+                return;
+            }
+
         }
     }
 }

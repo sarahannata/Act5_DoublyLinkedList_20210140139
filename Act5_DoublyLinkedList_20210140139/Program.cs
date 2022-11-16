@@ -187,6 +187,11 @@ namespace DoublyLinkedList
                                 obj.traverse();
                             }
                             break;
+                        case '4':
+                            {
+                                obj.revtraverse();
+                            }
+                            break;
                     }
                 }
                 catch (Exception e)
